@@ -1,0 +1,39 @@
+<html>
+<head>
+    {% include 'home/css.html' %}
+</head>
+<body>
+<center>
+    {% include 'home/navigation.html'%}
+<h1>List of Songs </h1>
+
+<table border="1" width="80%">
+<tr>
+<th>name</th>
+<th>MovieTitle</th>
+<th>year</th>
+
+<th>download link</th>
+    <th>play song</th>
+    
+</tr>
+{% for song in songs  %}
+<tr align="center">
+<td>{{song.name}}</td>
+<td>{{song.movieTitle}}</td>
+<td>{{song.year}}</td>
+    <td> <a Href="{{song.download}}">Download</a> </td>
+<td><audio controls>
+    <source src="{{song.download}}" type="audio/mpeg">
+    your browser does not support audia tag</audio></td>
+</tr>
+    {%  endfor %}
+</table>
+     {% include 'home/footer.html' %}
+<center>
+
+
+</body>
+
+
+</html>

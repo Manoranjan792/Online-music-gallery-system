@@ -1,0 +1,28 @@
+<html>
+    <head>
+    {% include 'home/css.html' %}
+        <style>
+            p{
+                margin:10px 0px 10px 0px;
+            }
+        
+        </style>    
+    
+    </head>
+    <body>
+        <center>
+            {% include 'home/navigation.html' %}
+            <h1>contact Us</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{forms.as_p}}
+                <div class="form-action">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+            
+            {% include 'home/footer.html' %}
+        
+        </center>
+    </body>
+</html>

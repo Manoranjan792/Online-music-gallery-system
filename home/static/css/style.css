@@ -1,0 +1,46 @@
+*{
+    margin:0px;
+}
+.ulclass{
+    list-style: none
+}
+
+nav > ul >li{
+    float: left;
+    width: 19.4%;
+    text-align:center;
+    background: #abcdef;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border:1px solid white;
+    
+}
+a:link{
+    color:"#c32a26";
+    text-decoration: none;
+    display:block;
+}
+a:visited{
+    color:"#c32a26";
+    text-decoration: none;
+
+}
+a:hover{
+    color: #c32a26;
+    text-decoration: none;
+
+}
+a:active{
+    color:#c32a26;
+    text-decoration: none;
+    
+}
+footer{
+    height:150px;
+    margin-top:80px;
+    color:black;
+    background:#aaa;
+    font-size:20px;
+    padding-top:60px
+}
